@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chucknorris</string>
+    <string name="text_error_network_not_avail">Oops, you seem to be offline. Please check your connection to internet.</string>
+    <string name="text_example"><![CDATA[Chuck Norris is not as smart as Einstein. It is impossible for Einstein to arrange M&M\'s in abc order but Chuck Norris can.]]></string>
+    <string name="text_welcome">SELAMAT DATANG</string>
+    <string name="text_search">tulis disini</string>
+</resources>
