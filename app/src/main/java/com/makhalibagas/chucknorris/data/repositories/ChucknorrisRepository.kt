@@ -17,6 +17,7 @@ class ChucknorrisRepository @Inject constructor(
 ) : IChucknorrisRepository {
 
     override fun getChucknorris(query: String): Flow<Resource<List<Chucknorris>>> = flow {
+        emit(Resource.Loading)
         when (val apiResource = remoteDataSource.getChucknorris(query).first()) {
             is ApiResponse.Success -> {
                 emit(Resource.Success(apiResource.data.map { it.toChucknorris() }))
